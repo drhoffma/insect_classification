@@ -1,4 +1,4 @@
-# Voxel51 Project Interview -- Insect Classification
+# Insect Classification
 
 ## Inspiration - Insect Classification
 
