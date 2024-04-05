@@ -2,9 +2,7 @@
 
 ## Inspiration - Insect Classification
 
-<div style="text-align:center;">
-<img src="/Users/drhoffma/PycharmProjects/v51/readme_assets/expedia.png" alt="IP102" style="width: 500px; height: auto;">
-</div>
+![](readme_assets/expedia.png)
 
 Sometimes you find bugs in your *code*.  Other times you find bugs in your *hotel room* or *AirBnB*...
 
@@ -30,11 +28,7 @@ Furthermore, I learned a few fundamentals of the **FiftyOne** API and applicatio
 
 ## 1. Dataset
 
-[//]: # (![]&#40;/Users/drhoffma/PycharmProjects/v51/readme_assets/ip102_dataset_montage.png&#41;)
-
-<div style="text-align:center;">
-<img src="/Users/drhoffma/PycharmProjects/v51/readme_assets/ip102_dataset_montage.png" alt="IP102" style="width: 400px; height: auto;">
-</div>
+![](readme_assets/ip102_dataset_montage.png)
 
 Review dataset settings in `config.py`.
 
