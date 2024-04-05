@@ -1,0 +1,217 @@
+/Users/drhoffma/PycharmProjects/v51/venv/bin/python /Users/drhoffma/PycharmProjects/v51/chapter19-training_custom_classification_tfkeras_nano/finetune.py
+Found 13272 images belonging to 5 classes.
+Found 2209 images belonging to 5 classes.
+Found 6641 images belonging to 5 classes.
+[INFO] compiling model...
+[INFO] training network...
+Epoch 1/3
+414/414 [==============================] - 391s 944ms/step - loss: 2.4130 - accuracy: 0.2426 - val_loss: 1.5346 - val_accuracy: 0.2899
+Epoch 2/3
+414/414 [==============================] - 397s 960ms/step - loss: 2.0509 - accuracy: 0.3384 - val_loss: 1.4342 - val_accuracy: 0.3786
+Epoch 3/3
+414/414 [==============================] - 388s 938ms/step - loss: 1.9137 - accuracy: 0.4016 - val_loss: 1.3453 - val_accuracy: 0.4284
+[INFO] evaluating after fine-tuning network head...
+                    precision    recall  f1-score   support
+
+      Cicadellidae       0.48      0.69      0.57      1723
+            aphids       0.28      0.60      0.38      1229
+    blister beetle       0.47      0.01      0.02       570
+Lycorma delicatula       0.59      0.39      0.47      1594
+           Miridae       0.55      0.14      0.22      1525
+
+          accuracy                           0.42      6641
+         macro avg       0.47      0.37      0.33      6641
+      weighted avg       0.48      0.42      0.38      6641
+
+<tensorflow.python.keras.engine.input_layer.InputLayer object at 0x145f31ee0>: False
+<tensorflow.python.keras.layers.convolutional.ZeroPadding2D object at 0x146437460>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146437670>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146437d60>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146437940>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x146493910>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146505250>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x14652c820>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146542ac0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146548f40>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146555550>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1465583d0>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x14655ae20>: False
+<tensorflow.python.keras.layers.convolutional.ZeroPadding2D object at 0x146560a30>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x1465682b0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14656abb0>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146570a30>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146578ca0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14657bc40>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146586730>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14658b5b0>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x14658b670>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x146599d60>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1465a5640>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1465b4850>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1465bfa90>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1465c6e80>: False
+<tensorflow.python.keras.layers.merge.Add object at 0x1465c6a00>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1465d9970>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1465df400>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1465e3c70>: False
+<tensorflow.python.keras.layers.convolutional.ZeroPadding2D object at 0x1465f0d60>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x1465f6760>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146606c70>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1465f6670>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146611b80>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14661dcd0>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146627a30>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14662f880>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x14662f5e0>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x14663ff70>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14664a970>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146658b80>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146664cd0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14666ff40>: False
+<tensorflow.python.keras.layers.merge.Add object at 0x14666fd30>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14667bd60>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1466856a0>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146688d90>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x14668ebb0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1466ac610>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1466acd60>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1466b8a60>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1466c18e0>: False
+<tensorflow.python.keras.layers.merge.Add object at 0x1466c1bb0>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1466cea60>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1466dde20>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1466dddc0>: False
+<tensorflow.python.keras.layers.convolutional.ZeroPadding2D object at 0x1466e6d60>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x1466f1760>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1466fec70>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1466f1670>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14670bb80>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146714cd0>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14671fa30>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146729880>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1467295e0>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x146739f40>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146745940>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146752b50>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14675ecd0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146769df0>: False
+<tensorflow.python.keras.layers.merge.Add object at 0x146769cd0>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146775d90>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14677e6d0>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1467817c0>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x14678cbe0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1467a6790>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1467a6d90>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1467b2a00>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1467bbc70>: False
+<tensorflow.python.keras.layers.merge.Add object at 0x1467bbdf0>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1467c8ee0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1467d1820>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1467d7100>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x1467e0d30>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1467fa8b0>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1467f17f0>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146805c40>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14680fd90>: False
+<tensorflow.python.keras.layers.merge.Add object at 0x14680ff10>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14681afd0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146825940>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1468259a0>: False
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x146833f70>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14683d400>: False
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146844940>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14685adf0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146860fa0>: False
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14686dca0>: False
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1468803d0>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146880670>: True
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x146887c40>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146893bb0>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146898790>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1468adbe0>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1468b9d30>: True
+<tensorflow.python.keras.layers.merge.Add object at 0x1468b9eb0>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1468c2fa0>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1468cb8e0>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1468d31c0>: True
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x1468dbdf0>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1468f37f0>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1468ee8e0>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146900d60>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146909f40>: True
+<tensorflow.python.keras.layers.merge.Add object at 0x14690cf40>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146915fa0>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14692e460>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x14692e880>: True
+<tensorflow.python.keras.layers.convolutional.ZeroPadding2D object at 0x14693a5b0>: True
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x14693ae50>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146946550>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x14693ad60>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146954d00>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146961ac0>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x14695bb50>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14697b0a0>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146975ee0>: True
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x14698fca0>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x14698f6d0>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146996b80>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1469a8eb0>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1469b0940>: True
+<tensorflow.python.keras.layers.merge.Add object at 0x1469b0910>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1469bff10>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1469c9d60>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1469c9dc0>: True
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x1469e7cd0>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x1469eaca0>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x1469e78b0>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x1469fbc10>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146a0a9d0>: True
+<tensorflow.python.keras.layers.merge.Add object at 0x146a10460>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146a1fa90>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146a297c0>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146a29ac0>: True
+<tensorflow.python.keras.layers.convolutional.DepthwiseConv2D object at 0x146a36910>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146a3edc0>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146a41dc0>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146a4ed30>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146a5eaf0>: True
+<tensorflow.python.keras.layers.convolutional.Conv2D object at 0x146a66820>: True
+<tensorflow.python.keras.layers.normalization_v2.BatchNormalization object at 0x146a75070>: True
+<tensorflow.python.keras.layers.advanced_activations.ReLU object at 0x146a70bb0>: True
+[INFO] re-compiling model...
+Epoch 1/10
+414/414 [==============================] - 557s 1s/step - loss: 2.0141 - accuracy: 0.3807 - val_loss: 1.5210 - val_accuracy: 0.3822
+Epoch 2/10
+414/414 [==============================] - 734s 2s/step - loss: 1.7823 - accuracy: 0.4645 - val_loss: 1.3373 - val_accuracy: 0.4511
+Epoch 3/10
+414/414 [==============================] - 605s 1s/step - loss: 1.6707 - accuracy: 0.5054 - val_loss: 1.2013 - val_accuracy: 0.5190
+Epoch 4/10
+414/414 [==============================] - 675s 2s/step - loss: 1.5999 - accuracy: 0.5289 - val_loss: 1.1047 - val_accuracy: 0.5616
+Epoch 5/10
+414/414 [==============================] - 644s 2s/step - loss: 1.5447 - accuracy: 0.5480 - val_loss: 1.0435 - val_accuracy: 0.5915
+Epoch 6/10
+414/414 [==============================] - 629s 2s/step - loss: 1.4989 - accuracy: 0.5590 - val_loss: 1.0143 - val_accuracy: 0.6128
+Epoch 7/10
+414/414 [==============================] - 591s 1s/step - loss: 1.4568 - accuracy: 0.5806 - val_loss: 0.9831 - val_accuracy: 0.6223
+Epoch 8/10
+414/414 [==============================] - 639s 2s/step - loss: 1.4213 - accuracy: 0.5870 - val_loss: 0.9660 - val_accuracy: 0.6418
+Epoch 9/10
+414/414 [==============================] - 912s 2s/step - loss: 1.4005 - accuracy: 0.5971 - val_loss: 0.9516 - val_accuracy: 0.6422
+Epoch 10/10
+414/414 [==============================] - 554s 1s/step - loss: 1.3682 - accuracy: 0.6085 - val_loss: 0.9345 - val_accuracy: 0.6526
+[INFO] evaluating after fine-tuning network...
+                    precision    recall  f1-score   support
+
+      Cicadellidae       0.72      0.75      0.74      1723
+            aphids       0.51      0.68      0.58      1229
+    blister beetle       0.56      0.36      0.44       570
+Lycorma delicatula       0.71      0.68      0.69      1594
+           Miridae       0.64      0.54      0.59      1525
+
+          accuracy                           0.64      6641
+         macro avg       0.63      0.60      0.61      6641
+      weighted avg       0.65      0.64      0.64      6641
+
+[INFO] serializing network...
+
+Process finished with exit code 0

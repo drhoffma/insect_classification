@@ -1,0 +1,14 @@
+fiftyone
+pandas
+numpy
+imutils
+scikit-learn
+opencv-contrib-python
+tensorflow==2.3.0
+matplotlib
+protobuf==3.20
+
+# for brainkey img_viz
+umap-learn
+torch
+torchvision
