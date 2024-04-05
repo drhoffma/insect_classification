@@ -346,4 +346,4 @@ App launched. Point your web browser to http://localhost:5151
 
 * Xiaoping Wu et al. “IP102: A Large-Scale Benchmark Dataset for Insect Pest Recognition”. In: IEEE CVPR. 2019, pages 8787–8796.
 * Voxel 51 Docs. Available: https://docs.voxel51.com
-* Hoffman, D., Rosebrock, A., McDuffee, D., Thanki, A. Paul, S. "Raspberry Pi for Computer Vision". Chapters 19-20.
+* Hoffman, D., Rosebrock, A., McDuffee, D., Thanki, A. Paul, S. "Raspberry Pi for Computer Vision - Volume 3". Chapters 19-20.
