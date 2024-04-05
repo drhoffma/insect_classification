@@ -30,6 +30,8 @@ Furthermore, I learned a few fundamentals of the **FiftyOne** API and applicatio
 
 ![](readme_assets/ip102_dataset_montage.png)
 
+Download the dataset from [Drive](https://drive.google.com/drive/folders/1svFSy2Da3cVMvekBwe13mzyx38XZ9xWo?usp=sharing) and extract it into a `/dataset` directory.
+
 Review dataset settings in `config.py`.
 
 Dataset directory prior to executing `prepare_dataset.py`:
